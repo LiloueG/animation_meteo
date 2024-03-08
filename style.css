@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  background: rgb(32, 30, 30);
+  font-family: 'Playfair Display', serif;
+  color: white;
+  padding: 0 100px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    background-color: rgb(32, 30, 30);
+}
+
+p {
+    text-align: right;
+}
+
+svg {
+    width: 128px;
+    height: 128px;
+    display: flex;
+}
+
+#pluie {
+      
+      .cls-2 {
+        stroke: rgb(197, 197, 197);
+        stroke-miterlimit: 10;
+        fill: rgb(197, 197, 197);
+      }
+  
+      .cls-3 {
+        fill: rgb(153, 153, 241);
+        stroke: rgb(153, 153, 241);
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: rgb(153, 153, 241);
+        stroke: rgb(153, 153, 241);
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    }
+
+
+/* Animation de la pluie */
+    @keyframes drop {
+      0% {
+      opacity: 1;
+      transform: translateY(0);
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(20px);
+      }
+    }
+
+    #pluie:hover .cls-3 {
+      animation: drop 1.25s infinite;
+    }
+
+    #pluie:hover .cls-4 {
+      animation: drop 1.25s infinite;
+      animation-delay: 0.25s;
+    }
+
+#vent {
+    .cls-1 {
+        fill: none;
+        stroke: #c9c9c9;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    .cls-2 {
+        fill: none;
+        stroke: #c9c9c9;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+}
+
+@keyframes wind {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  #vent:hover .cls-1 {
+    animation: wind 1s infinite;
+  }
+  #vent:hover .cls-2 {
+    animation: wind 1s infinite;
+    animation-delay: 0.25s;
+  }
+
+#tonnerre {
+    .cls-1 {
+        fill: none;
+        stroke: rgb(197, 197, 197);
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+    .cls-2 {
+        fill: none;
+        stroke: #ddb902;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+      .cls-3 {
+        fill: none;
+        stroke: #ddb902;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+      .cls-4 {
+        fill: none;
+        stroke: #ddb902;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+}
+
+@keyframes thunder {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #tonnerre:hover .cls-2 {
+    animation: thunder 1s infinite;
+  }
+  #tonnerre:hover .cls-3 {
+    animation: thunder 1s infinite;
+    animation-delay: 0.5s;
+  }
+  #tonnerre:hover .cls-4 {
+    animation: thunder 1s infinite;
+    animation-delay: 0.75s;
+  }
