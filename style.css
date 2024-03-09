@@ -40,6 +40,12 @@ header{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 p {
     text-align: right;
 }
@@ -131,7 +137,7 @@ svg {
     animation-delay: 0.25s;
   }
 
-#tonnerre {
+#orage {
     .cls-1 {
         fill: none;
         stroke: rgb(197, 197, 197);
@@ -171,16 +177,16 @@ svg {
     }
   }
 
-    #tonnerre:hover .cls-2 {
+    #orage:hover .cls-2 {
       animation: thunder 1s infinite;
     }
-    #tonnerre:hover .cls-3 {
+    #orage:hover .cls-3 {
       animation: thunder 1s infinite;
     }
-    #tonnerre:hover .cls-4 {
+    #orage:hover .cls-4 {
       animation: thunder 1s infinite;
     }
-  #tonnerre:hover .cls-1 {
+  #orage:hover .cls-1 {
     animation: thunder 1s infinite;
     animation-delay: 0.25s;
   }
